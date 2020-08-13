@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Destini_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7gJ-q3-Ama">
+                                <rect key="frame" x="-1" y="0.0" width="415" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choice2Background" translatesAutoresizingMaskIntoConstraints="NO" id="MYg-Jr-fHg">
+                                <rect key="frame" x="20" y="762" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="lyA-zV-xqm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choice1Background" translatesAutoresizingMaskIntoConstraints="NO" id="hfe-Bj-hDA">
+                                <rect key="frame" x="20" y="652" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2iQ-vY-CXe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-aE-VDe">
+                                <rect key="frame" x="20" y="44" width="374" height="508"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BIu-al-itt">
+                                <rect key="frame" x="40" y="662" width="334" height="80"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <state key="normal" title="Buttonjhkajhahsd ahashkjhaskdj jahdhaskjdh ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="moF-Ta-Org"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="unf-LN-7u6">
+                                <rect key="frame" x="40" y="772" width="334" height="80"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tht-60-R4M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MTO-aE-VDe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="10H-Ef-v6n"/>
+                            <constraint firstItem="hfe-Bj-hDA" firstAttribute="top" secondItem="MTO-aE-VDe" secondAttribute="bottom" constant="100" id="1Qc-xb-q2J"/>
+                            <constraint firstItem="7gJ-q3-Ama" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5AP-n3-Nkj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MTO-aE-VDe" secondAttribute="trailing" constant="20" id="8fg-MG-ho2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MYg-Jr-fHg" secondAttribute="trailing" constant="20" id="Bxd-jZ-mXJ"/>
+                            <constraint firstItem="MYg-Jr-fHg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EbQ-Xe-ezW"/>
+                            <constraint firstAttribute="trailing" secondItem="7gJ-q3-Ama" secondAttribute="trailing" id="JiF-s8-dy8"/>
+                            <constraint firstItem="BIu-al-itt" firstAttribute="height" secondItem="hfe-Bj-hDA" secondAttribute="height" constant="-20" id="KXC-ga-hei"/>
+                            <constraint firstItem="BIu-al-itt" firstAttribute="centerY" secondItem="hfe-Bj-hDA" secondAttribute="centerY" id="T7D-FZ-sUO"/>
+                            <constraint firstItem="MTO-aE-VDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TQi-51-e0I"/>
+                            <constraint firstItem="MYg-Jr-fHg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XEa-4s-Td5"/>
+                            <constraint firstItem="unf-LN-7u6" firstAttribute="height" secondItem="MYg-Jr-fHg" secondAttribute="height" constant="-20" id="cDo-ur-z5z"/>
+                            <constraint firstItem="hfe-Bj-hDA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e9K-VI-zPa"/>
+                            <constraint firstItem="unf-LN-7u6" firstAttribute="width" secondItem="MYg-Jr-fHg" secondAttribute="width" constant="-40" id="eiC-vV-2cw"/>
+                            <constraint firstAttribute="bottom" secondItem="7gJ-q3-Ama" secondAttribute="bottom" id="g2q-cn-ZME"/>
+                            <constraint firstItem="unf-LN-7u6" firstAttribute="centerX" secondItem="MYg-Jr-fHg" secondAttribute="centerX" id="gjg-Kc-iJ3"/>
+                            <constraint firstItem="hfe-Bj-hDA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="gqk-Ag-25N"/>
+                            <constraint firstItem="unf-LN-7u6" firstAttribute="centerY" secondItem="MYg-Jr-fHg" secondAttribute="centerY" id="j6U-z0-C4K"/>
+                            <constraint firstItem="BIu-al-itt" firstAttribute="width" secondItem="hfe-Bj-hDA" secondAttribute="width" constant="-40" id="kaS-gy-KaQ"/>
+                            <constraint firstItem="7gJ-q3-Ama" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-1" id="uQx-Is-Jei"/>
+                            <constraint firstItem="BIu-al-itt" firstAttribute="centerX" secondItem="hfe-Bj-hDA" secondAttribute="centerX" id="wBN-J8-qHH"/>
+                            <constraint firstItem="MYg-Jr-fHg" firstAttribute="top" secondItem="hfe-Bj-hDA" secondAttribute="bottom" constant="10" id="zsN-DR-v7P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="choice1" destination="BIu-al-itt" id="lxz-Pp-DOT"/>
+                        <outlet property="choice2" destination="unf-LN-7u6" id="MZn-Tn-trP"/>
+                        <outlet property="storyLabel" destination="MTO-aE-VDe" id="uZ6-y8-Cqq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="choice1Background" width="1370.5" height="363"/>
+        <image name="choice2Background" width="1370.5" height="363"/>
+    </resources>
+</document>
